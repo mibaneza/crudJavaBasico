@@ -22,7 +22,8 @@ public class Contacto implements Serializable{
 	private String comentario;
 
 	
-	public Contacto(String nombre, String mail, String comentario) {
+	public Contacto(Long id,String nombre, String mail, String comentario) {
+		this.id = id;
 		this.nombre = nombre;
 		this.mail = mail;
 		this.comentario = comentario;
