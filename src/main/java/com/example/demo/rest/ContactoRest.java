@@ -36,7 +36,7 @@ public class ContactoRest {
 	}
 	
 	@PutMapping("/contacto")
-	public ResponseEntity<?> updateContacto (@RequestBody Contacto contacto) throws Exception{
+	public ResponseEntity<?> updateContacto (@RequestBody Contacto contacto){
 		Contacto contactoDb = null;
 		contactoDb = conS.findContacto(contacto.getId());
 		if(contactoDb != null) {
